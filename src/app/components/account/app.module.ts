@@ -7,6 +7,7 @@ import { LoginAppRoutingModule } from './app.route';
 //Main Component
 import { AccountAppComponent } from './app.component';
 
+//Components
 import { AuthComponent } from './auth/auth.component';
 import { CreateComponent } from './create/create.component';
 
