@@ -1,19 +1,25 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+//Main Components
 import { InstitutionalAppComponent } from './app.component';
 
-import { HomeComponent } from './home/home.component';
+//Components
+import { HomeInstitutionalComponent } from './home/home.component';
+import { AboutInstitutionalComponent } from './about/about.component';
 
 const routes: Routes = [
   {
     path: '',
     component: InstitutionalAppComponent,
     children: [
-      { path: 'home', component: HomeComponent},
-      { path: 'sobre', component: HomeComponent},
+      { path: '', component: HomeInstitutionalComponent },
+      {
+        path: 'about',
+        component: AboutInstitutionalComponent,
+      }
     ],
-  },
+  }
 ];
 
 

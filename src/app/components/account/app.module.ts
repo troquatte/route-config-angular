@@ -2,20 +2,20 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
 //Route
-import { LoginAppRoutingModule } from './app.route';
+import { LoginAppRoutingModule } from './routing.module';
 
 //Main Component
 import { AccountAppComponent } from './app.component';
 
 //Components
-import { AuthComponent } from './auth/auth.component';
-import { CreateComponent } from './create/create.component';
+import { AuthAccountComponent } from './auth/auth.component';
+import { CreateAccountComponent } from './create/create.component';
 
 @NgModule({
   declarations: [
     AccountAppComponent,
-    CreateComponent,
-    AuthComponent
+    AuthAccountComponent,
+    CreateAccountComponent
   ],
   imports: [
     CommonModule,

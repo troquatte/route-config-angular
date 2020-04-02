@@ -2,19 +2,21 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
 //Route
-import { InstitutionalAppRoutingModule } from './app.route';
+import { InstitutionalAppRoutingModule } from './routing.module';
 
 //Main Component
 import { InstitutionalAppComponent } from './app.component';
 
 //Components
-import { HomeComponent } from './home/home.component';
+import { HomeInstitutionalComponent } from './home/home.component';
+import { AboutInstitutionalComponent } from './about/about.component';
 
 
 @NgModule({
   declarations: [
     InstitutionalAppComponent,
-    HomeComponent
+    HomeInstitutionalComponent,
+    AboutInstitutionalComponent,
   ],
   imports: [
     CommonModule,

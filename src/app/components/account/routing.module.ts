@@ -3,16 +3,16 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AccountAppComponent } from './app.component';
 
-import { AuthComponent } from './auth/auth.component';
-import { CreateComponent } from './create/create.component';
+import { AuthAccountComponent } from './auth/auth.component';
+import { CreateAccountComponent } from './create/create.component';
 
 const routes: Routes = [
   {
     path: '',
     component: AccountAppComponent,
     children: [
-      { path: 'auth', component: AuthComponent},
-      { path: 'create', component: CreateComponent},
+      { path: '', component: AuthAccountComponent},
+      { path: 'create', component: CreateAccountComponent},
     ],
   },
 ];
