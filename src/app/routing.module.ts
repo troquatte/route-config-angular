@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { InstitutionalAppComponent } from './components/institutional/app.component';
+import { NotFoundComponent } from './components/shared/not-found/not-found.component';
 
 const routes: Routes = [
   {
@@ -13,7 +13,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: "http://google.com/"
+    component: NotFoundComponent
   }
 ];
 

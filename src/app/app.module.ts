@@ -6,10 +6,12 @@ import { AppRoutingModule } from './routing.module';
 
 //Main Component
 import { AppComponent } from './app.component';
+import { NotFoundComponent } from './components/shared/not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
